@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     height: 60px;
-    background: #272727;
-    color: #FFF;
+    background: ${ props => props.theme.colors.primary};
+    color: #FF6EC7;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 30px;
 `;
