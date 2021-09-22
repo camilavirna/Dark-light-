@@ -4,6 +4,8 @@ import {ThemeContext} from 'styled-components';
 import { Container } from './styles';
 import { shade } from "polished";
 
+
+
 interface Props {
     toggleTheme(): void;
 }
@@ -12,7 +14,12 @@ const Header: React.FC<Props> = ({toggleTheme}) => {
     const { colors, title } = useContext(ThemeContext);
     return (
         <Container>
-           Camila Virna  
+          <span>Camila Virna</span>
+            <>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#Skills">Habilidades</a></li>
+            </>
 
             <Switch
                 onChange={toggleTheme}

@@ -13,4 +13,13 @@ export default createGlobalStyle`
         color: ${ props => props.theme.colors.text};
         font-family: sans-serif;
     }
+
+    main {
+        background: ${props => props.theme.colors.background};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 36px;
+    }
 `;
